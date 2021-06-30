@@ -1,6 +1,6 @@
 <?php
 // 设置API路径
-define('API_URI', 'https://api.injahow.cn/meting/');
+define('API_URI', 'https://meting.kcn3388.club/');
 // 设置中文歌词
 define('LYRIC_CN', true);
 // 设置文件缓存及时间
@@ -55,10 +55,9 @@ $api = new Meting($server);
 $api->format(true);
 
 // 设置cookie
-/*
 if ($server == 'netease') {
-    $api->cookie('os=pc; osver=Microsoft-Windows-10-Professional-build-10586-64bit; appver=2.0.3.131777; channel=netease; MUSIC_U=****** ; __remember_me=true');
-}*/
+    $api->cookie('NMTID=00OcKJCnFqvI5A33k8Dk1Bdw1YLHaYAAAF6SEIBdQ; Max-Age=315360000; Expires=Tue, 24 Jun 2031 12:18:43 GMT; Path=/;;__csrf=bdf5fb7ebc6414eca41680e8bc39ee23; Max-Age=1296010; Expires=Sun, 11 Jul 2021 12:18:53 GMT; Path=/;;MUSIC_U=4251d3763d1eaebc382624e10712a2e65e9b5233b736633d83006e5eb95a7166d02d87d275bb655f6c0b02903764249b; Max-Age=1296000; Expires=Sun, 11 Jul 2021 12:18:43 GMT; Path=/;;__remember_me=true; Max-Age=1296000; Expires=Sun, 11 Jul 2021 12:18:43 GMT; Path=/;');
+}
 
 if ($type == 'playlist') {
 
